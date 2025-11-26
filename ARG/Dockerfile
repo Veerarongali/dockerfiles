@@ -1,9 +1,8 @@
 ARG VERSION
-FROM almalinux: ${VERSION:-9}
+FROM almalinux:${VERSION:-9}
 ARG COURSE="DEVOPS" \
     TRAINER="SHIVA"
 ENV COURSE=${COURSE}
-RUN echo "Course: ${COURSE}""
+RUN echo "Course: ${COURSE}"
 CMD ["sleep", "1000"]
-
 
